@@ -29,7 +29,7 @@ public class ProductoEntity implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long IDproducto;
     
-    @Column(name= "NombreProduc")
+    @Column(name= "nombproducto")
     private String NombreProduc;
     
     @Column(name= "Precio")
@@ -59,7 +59,7 @@ public class ProductoEntity implements Serializable{
     private CategoriaEntity IDCategoria;
     
     @ManyToOne
-    @JoinColumn(name="IDdetalleCompra", nullable = false)
+    @JoinColumn(name="codigo", nullable = false)
     private DetalleComprasEntity IDdetalleCompra;
     
     
