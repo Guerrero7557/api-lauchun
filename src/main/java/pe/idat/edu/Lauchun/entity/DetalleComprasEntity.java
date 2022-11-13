@@ -24,7 +24,7 @@ public class DetalleComprasEntity implements Serializable{
     private static final long serialVersionUID=1L;
     
     @Id
-    @Column(name = "IDdetalleCompra")
+    @Column(name = "codigo")
     @GeneratedValue(strategy = GenerationType.IDENTITY)    
     private long IDdetalleCompra;
     
