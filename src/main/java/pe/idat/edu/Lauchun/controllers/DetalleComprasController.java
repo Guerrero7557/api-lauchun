@@ -26,7 +26,10 @@ public class DetalleComprasController {
         return DetCompServ.findAll();
     }
     
-    
+    @GetMapping("custom")
+    public List<DetalleComprasEntity>findAllCustom(){
+        return DetCompServ.findAllCustom();
+    }
     
     @GetMapping("/{id}")
     public Optional<DetalleComprasEntity>findById(@PathVariable Long id ){
